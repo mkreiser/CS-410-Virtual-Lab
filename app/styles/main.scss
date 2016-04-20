@@ -7,10 +7,18 @@
 
 .container {
   margin: 0 15px;
-  margin-top: 15px;
+  padding-top: 15px;
 }
 
 .page-header {
   font-size: 36px;
   font-weight: 300;
+}
+
+.main-content {
+  padding-top: 15px;
+
+  .parameters-header {
+    margin-bottom: 5px;
+  }
 }

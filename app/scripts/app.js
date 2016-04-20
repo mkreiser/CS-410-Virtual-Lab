@@ -12,10 +12,10 @@ angular
   .module('cs410VirtualLabApp', [
     'ngAnimate',
     'ngCookies',
+    'ngMaterial',
     'ngResource',
     'ngRoute',
-    'ngSanitize',
-    'ngTouch'
+    'ngSanitize'
   ])
   .config(function ($routeProvider) {
     $routeProvider

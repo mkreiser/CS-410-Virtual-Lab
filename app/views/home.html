@@ -1,1 +1,23 @@
 <div class="page-header">CS 410 Virtual Lab</div>
+
+<div class="main-content">
+	<md-input-container class="ranker-input">
+		<label>Ranker</label>
+		<md-select class="ranker-select" ng-model="ranker">
+			<md-option>Okapi BM25</md-option>
+			<md-option>Pivoted Length Normalization</md-option>
+			<md-option>Absolute Discount Smoothing</md-option>
+			<md-option>Jelinek-Mercer Smoothing</md-option>
+			<md-option>Dirichlet-Prior Smoothing</md-option>
+		</md-select>
+	</md-input-container>
+
+	<div class="parameters-header" ng-if="ranker">Parameters</div>
+	<md-input-container ng-repeat="param in rankerInfo.parameters">
+		<label>{{param.name}}</label>
+		<input required type="number" ng-model="param.value" ng-init="param.value=param.default"></input>
+	</md-input-container>
+</div>
+
+
+
