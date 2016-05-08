@@ -25,7 +25,7 @@ angular.module('cs410VirtualLabApp')
 
 		console.log(requestObj);
 
-		$http.post('http://localhost:9001/', requestObj)
+		$http.post('http://localhost:9001/search-api', requestObj)
 			.then(function(response) {
 				console.log(response);
 			});
