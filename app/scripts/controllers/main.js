@@ -25,7 +25,7 @@ angular.module('cs410VirtualLabApp')
 
 		console.log(requestObj);
 
-		$http.post('http://localhost:8089/', requestObj)
+		$http.post('http://0.0.0.0:8089/', requestObj)
 			.then(function(response) {
 				console.log(response);
 			});
